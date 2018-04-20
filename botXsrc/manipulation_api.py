@@ -25,6 +25,9 @@ import os
 class ManipulationAPI(BaseComponent):
 
     def setup(self):
+        # use a different check to confirm the robot is up
+        rospy.wait_for_service("/plan_kinematic_path")
+        
         command = "roslaunch haptica_manipulation path_planner.launch"
         self.proc_id = external_command_pool.start_command(command)
 
