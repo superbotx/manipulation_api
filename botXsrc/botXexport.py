@@ -31,4 +31,15 @@ documentation generation.
 
 Modify the following variable to your needs
 """
-botXexport = {}
+from .manipulation_api import ManipulationAPI
+
+botXexport = {
+    'manipulation_api': {
+        'module': ManipulationAPI,
+        'type': 'api',
+        'inputs': [],
+        'outputs': [],
+        'requirements': [],
+        'description': 'api to control a robot arm'
+    }
+}
