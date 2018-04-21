@@ -1,12 +1,12 @@
 {
-    "name": "manipulation_api",
-    "source_scripts": [],
     "version": "0.0.1",
-    "botX_modules": {},
+    "source_scripts": [],
     "external_modules": {
         "haptica_manipulation": {
             "name": "haptica_manipulation",
             "url": "https://github.com/superbotx/haptica_manipulation.git"
         }
-    }
+    },
+    "botX_modules": {},
+    "name": "manipulation_api"
 }
